@@ -1,0 +1,51 @@
+:root {
+  --primary-red: hsl(0, 100%, 74%);
+  --primary-green: hsl(154, 59%, 51%);
+  --accent-blue: hsl(248, 32%, 49%);
+  --accent-white: hsl(0, 0%, 100%);
+  --neutral-dark-blue: hsl(249, 10%, 26%);
+  --neutral-grayish-blue: hsl(246, 25%, 77%);
+  --neutral-dark-blue-shadow: rgba(62, 60, 73, 0.25);
+  --font-size: 16px;
+  --font-family: "Poppins", sans-serif;
+  --font-weight-one: 700;
+  --font-weight-two: 600;
+  --font-weight-three: 500;
+  --font-weight-four: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: var(--font-size);
+}
+
+h1 {
+  font-weight: var(--font-weight-one);
+}
+
+h2 {
+  font-weight: var(--font-weight-two);
+}
+
+h3 {
+  font-weight: var(--font-weight-three);
+}
+
+h4 {
+  font-weight: var(--font-weight-four);
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.5rem;
+}/*# sourceMappingURL=App.css.map */

@@ -1,0 +1,90 @@
+@import "../Variables/Variables";
+@import "../Mixins/Mixins";
+
+section {
+    @include flex(column, auto, auto, 1.5rem);
+    width: 45%;
+
+    .free, form {
+        width: 100%;
+        box-shadow: 0 0.5rem var(--neutral-dark-blue-shadow);
+    }
+
+    .free {
+        background-color: var(--accent-blue);
+        border-radius: 10px;
+        text-align: center;
+        padding: 2rem;
+
+        p {
+            span {
+                font-weight: var(--font-weight-one);
+            }
+        }
+    }
+
+    form {
+        @include flex(column, auto, auto, 1rem);
+        background-color: var(--accent-white);
+        border-radius: 10px;
+        padding: 2rem;
+
+        div {
+            @include flex(column, auto, flex-end, 1rem);
+            position: relative;
+
+            svg {
+                position: absolute;
+                top: 1rem;
+                right: 1rem;
+            }
+        }
+
+        input {
+            width: 100%;
+            font-weight: var(--font-weight-two);
+            border: solid 1px var(--neutral-grayish-blue);
+            outline: none;
+            border-radius: 10px;
+            padding: 1rem 1.5rem;
+
+            &:focus {
+                border: solid 1px var(--neutral-dark-blue);
+            }
+        }
+
+        #submit {
+            background-color: var(--primary-green);
+            color: var(--accent-white);
+            cursor: pointer;
+
+            &:hover {
+                filter: opacity(0.75);
+            }
+        }
+
+        p {
+            color: var(--primary-red);
+            font-size: 0.65rem;
+            font-style: italic;
+        }
+
+        #tos {
+            color: var(--neutral-grayish-blue);
+            font-size: 0.65rem;
+            text-align: center;
+            align-self: center;
+
+            a {
+                color: var(--primary-red);
+                font-weight: var(--font-weight-one);
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    section {
+        width: 100%;
+    }
+}

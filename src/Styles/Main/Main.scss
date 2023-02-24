@@ -1,0 +1,26 @@
+@import "../Variables/Variables";
+@import "../Mixins/Mixins";
+
+main {
+    @include flex(auto, center, auto, auto);
+    min-height: 100vh;
+    background-color: var(--primary-red);
+    background-image: url(../../Images/bg-intro-desktop.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .main-container {
+        @include flex(auto, space-between, center, 15%);
+        width: 80%;
+        padding: 2rem 0;
+    }
+}
+
+@media (max-width: 1000px) {
+    main {
+        .main-container {
+            @include flex(column, auto, auto, 2rem);
+        }
+    }
+}

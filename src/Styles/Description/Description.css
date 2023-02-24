@@ -1,0 +1,38 @@
+:root {
+  --primary-red: hsl(0, 100%, 74%);
+  --primary-green: hsl(154, 59%, 51%);
+  --accent-blue: hsl(248, 32%, 49%);
+  --accent-white: hsl(0, 0%, 100%);
+  --neutral-dark-blue: hsl(249, 10%, 26%);
+  --neutral-grayish-blue: hsl(246, 25%, 77%);
+  --neutral-dark-blue-shadow: rgba(62, 60, 73, 0.25);
+  --font-size: 16px;
+  --font-family: "Poppins", sans-serif;
+  --font-weight-one: 700;
+  --font-weight-two: 600;
+  --font-weight-three: 500;
+  --font-weight-four: 400;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: auto;
+  align-items: auto;
+  gap: 1.5rem;
+  width: 45%;
+}
+section h1, section p {
+  color: var(--accent-white);
+}
+section h1 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+}
+
+@media (max-width: 1000px) {
+  section {
+    width: 100%;
+    text-align: center;
+  }
+}/*# sourceMappingURL=Description.css.map */

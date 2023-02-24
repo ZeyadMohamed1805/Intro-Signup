@@ -1,0 +1,100 @@
+:root {
+  --primary-red: hsl(0, 100%, 74%);
+  --primary-green: hsl(154, 59%, 51%);
+  --accent-blue: hsl(248, 32%, 49%);
+  --accent-white: hsl(0, 0%, 100%);
+  --neutral-dark-blue: hsl(249, 10%, 26%);
+  --neutral-grayish-blue: hsl(246, 25%, 77%);
+  --neutral-dark-blue-shadow: rgba(62, 60, 73, 0.25);
+  --font-size: 16px;
+  --font-family: "Poppins", sans-serif;
+  --font-weight-one: 700;
+  --font-weight-two: 600;
+  --font-weight-three: 500;
+  --font-weight-four: 400;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: auto;
+  align-items: auto;
+  gap: 1.5rem;
+  width: 45%;
+}
+section .free, section form {
+  width: 100%;
+  box-shadow: 0 0.5rem var(--neutral-dark-blue-shadow);
+}
+section .free {
+  background-color: var(--accent-blue);
+  border-radius: 10px;
+  text-align: center;
+  padding: 2rem;
+}
+section .free p span {
+  font-weight: var(--font-weight-one);
+}
+section form {
+  display: flex;
+  flex-direction: column;
+  justify-content: auto;
+  align-items: auto;
+  gap: 1rem;
+  background-color: var(--accent-white);
+  border-radius: 10px;
+  padding: 2rem;
+}
+section form div {
+  display: flex;
+  flex-direction: column;
+  justify-content: auto;
+  align-items: flex-end;
+  gap: 1rem;
+  position: relative;
+}
+section form div svg {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+section form input {
+  width: 100%;
+  font-weight: var(--font-weight-two);
+  border: solid 1px var(--neutral-grayish-blue);
+  outline: none;
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+}
+section form input:focus {
+  border: solid 1px var(--neutral-dark-blue);
+}
+section form #submit {
+  background-color: var(--primary-green);
+  color: var(--accent-white);
+  cursor: pointer;
+}
+section form #submit:hover {
+  filter: opacity(0.75);
+}
+section form p {
+  color: var(--primary-red);
+  font-size: 0.65rem;
+  font-style: italic;
+}
+section form #tos {
+  color: var(--neutral-grayish-blue);
+  font-size: 0.65rem;
+  text-align: center;
+  align-self: center;
+}
+section form #tos a {
+  color: var(--primary-red);
+  font-weight: var(--font-weight-one);
+}
+
+@media (max-width: 1000px) {
+  section {
+    width: 100%;
+  }
+}/*# sourceMappingURL=Form.css.map */

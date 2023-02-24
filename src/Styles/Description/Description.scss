@@ -1,0 +1,23 @@
+@import "../Variables/Variables";
+@import "../Mixins/Mixins";
+
+section {
+    @include flex(column, auto, auto, 1.5rem);
+    width: 45%;
+
+    h1, p {
+        color: var(--accent-white);
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    section {
+        width: 100%;
+        text-align: center;
+    }
+}

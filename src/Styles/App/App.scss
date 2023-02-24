@@ -1,0 +1,38 @@
+@import "../Variables/Variables";
+@import "../Mixins/Mixins";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: var(--font-size);
+}
+
+h1 {
+    font-weight: var(--font-weight-one);
+}
+
+h2 {
+    font-weight: var(--font-weight-two);
+}
+
+h3 {
+    font-weight: var(--font-weight-three);
+}
+
+h4 {
+    font-weight: var(--font-weight-four);
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    line-height: 1.5rem;
+}
