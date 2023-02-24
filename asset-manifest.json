@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Intro-Signup/static/css/main.a58638e5.css",
+    "main.js": "/Intro-Signup/static/js/main.44fd20ba.js",
+    "static/media/bg-intro-desktop.png": "/Intro-Signup/static/media/bg-intro-desktop.059183eea52640c5068d.png",
+    "index.html": "/Intro-Signup/index.html",
+    "main.a58638e5.css.map": "/Intro-Signup/static/css/main.a58638e5.css.map",
+    "main.44fd20ba.js.map": "/Intro-Signup/static/js/main.44fd20ba.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a58638e5.css",
+    "static/js/main.44fd20ba.js"
+  ]
+}
