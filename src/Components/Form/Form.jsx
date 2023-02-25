@@ -1,5 +1,6 @@
 import "../../Styles/Form/Form.css";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 const Form = () => {
     const [paragraphsDisplay, setParagraphsDisplay] = useState({
@@ -25,7 +26,7 @@ const Form = () => {
     }
 
     return (
-        <section>
+        <motion.section initial={{x: "150%"}} animate={{x: 0}} transition={{duration: 1}}>
             <div className="free">
                 <p><span>Try it free 7 days</span> then $20/mo. thereafter</p>
             </div>
@@ -53,7 +54,7 @@ const Form = () => {
                 <input type="submit" id="submit" value="CLAIM YOUR FREE TRIAL" />
                 <p id="tos">By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
             </form>
-        </section>
+        </motion.section>
     )
 }
 
